@@ -20,4 +20,5 @@ You just need to download package source codes to your specified directory, and 
 
 
 COPYRIGHT
+
 Copyright © 2020 Huihai Wu. This program is free software; you may redistribute it under the terms of the GNU General Public License v3.0. This program has no warranty.
