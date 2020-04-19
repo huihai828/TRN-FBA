@@ -1,0 +1,22 @@
+#TRN-FBA problem file format
+>ANALYSIS	objstat/fba/fva
+>OBJSENSE	maximize/minimize	#comment
+>OBJECTIVE	0.5 R1 + -1 R2 + R3 + M1
+>REACTIONS	R1 R2 R3	#reactions
+>GENES	G1 G2 G3
+>CONSTRAINTS
+R1	0	10	#comment
+R2	-1	1	#comment
+R3 + 0.5 R4	-1	1	#comment
+R5 + -0.6 R6	-1	1	#comment
+>SOLVER	glpk	#set slover and parameters/options
+msg_lev	GLP_MSG_ERR
+meth	GLP_DUAL
+tol_bnd	1e-6
+tol_dj	1e-8
+>MEDIA	#set different substrate media for tests
+medium1	R_EX_1	-10	10	
+medium1	R_EX_2	-10	10	
+medium2	R_EX_3	-10	10
+medium3	R_EX_4	-10	10	
+
